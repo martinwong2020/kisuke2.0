@@ -1,0 +1,70 @@
+.body{
+    display:flex;
+    justify-content: center;
+    /* align-items: center; */
+    position:fixed;
+    bottom:0px;
+    height:100%;
+    /* border:solid purple 2px; */
+    width:100%;
+    /* align-items: center; */
+}
+.kisukeBankai{
+    filter:grayscale(100%);
+    height:100%;
+    animation: fadeIn;
+    /* object-fit: contain; */
+}
+@keyframes fadeIn {
+    0%{ filter:grayscale(100%);}
+    100%{filter:grayscale(0%);}
+}
+html{
+    height:100%;
+}
+body{
+    min-height:100%;
+    overflow:hidden;
+    background-color: gray;
+    /* filter:grayscale(100%); */
+    background-image:url('images/backpanels.jpg');
+
+    background-repeat:no-repeat;
+    /* background-position: center center; */
+    background-size:cover ;
+    /* border:solid 5px red; */
+    margin-left:0px;
+    margin-right:0px;
+    margin-top:0px;
+    margin-bottom:0px;
+    /* border:2px green solid; */
+    
+}
+.slashParent{
+    /* border:solid 2px yellow; */
+    position:absolute;
+    z-index: 1;
+    display:flex;
+    /* justify-content: center; */
+    align-items:center;
+    width:100%;
+    height:100%;
+    visibility:hidden;
+}
+.slash{
+    border:solid 5px black;
+    height:0px;
+    width:100%;
+    /* animation: slash 1s; */
+    /* display:none; */
+    
+}
+@keyframes slash {
+    0%{width:0%;}
+    100%{width:100%;}
+}
+@keyframes flash{
+    0%{height:0%;}
+    100%{height:100%;}
+}
+

@@ -1,0 +1,217 @@
+body{
+  margin:0;
+  padding:0;
+  font-size:100%;
+  line-height:1.6;
+  
+}
+html{
+  scroll-behavior: smooth;
+}
+header{
+  position: fixed;
+  top:0;
+  left:0;
+  width:100%;
+  padding:30px;
+  display: flex;
+  justify-content:space-evenly;
+  align-items:center;
+  /* border:solid 5px pink; */
+  background-color:mediumseagreen;
+  height:1.5em;
+  z-index: 10;
+}
+header ul{
+  display: flex;
+  justify-content:center;
+  align-items:ceneter;
+}
+header ul li{
+  list-style:none;
+  margin-left:50px;
+}
+header ul li a{
+  text-decoration:none;
+  color:white;
+  padding:20px 15px;
+  border-radius:10px;
+}
+header ul li a:hover{
+  background-color:white;
+  color:black;
+}
+header .icon{
+  color:white;
+  font-weight:700;
+  font-size:2em;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.sectiontop{
+    background-image:url("images/backpanels.jpg");
+    min-height:50em;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.sectionmid{
+    background-image:url("images/backgroundjapanart.jpg");
+    min-height:50em;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.middleText{
+  background-color:green;
+  min-height:35em;
+  border:5px solid black;
+  overflow:hidden;
+}
+.aboutimage{
+  float:left;
+  
+  /* border:2px white solid; */
+  padding-top:15px;
+  width:20%
+}
+.about{
+  float:left;
+  display: flex;
+  align-content:center;
+  justify-content:center;
+  flex-direction: column;
+  /* border:purple 3px solid; */
+  width:80%;
+  height:35em;
+  overflow:hidden;
+  /* position: absolute; */
+}
+.bankai{
+  height:30em;
+  width:100%;
+  background-color:mediumseagreen;
+}
+
+#wrapper{
+  position:relative;
+  width:100%;
+  min-height:55vw;
+  overflow:hidden;  
+}
+.layer{
+  position:absolute;
+  width:100vw;
+  min-height:55vw;
+  overflow:hidden;
+  /* border:solid pink 5px; */
+  
+}
+.layer .contentWrap{
+  position: absolute;
+  width:100vw;
+  min-height:55vw;
+  /* border:solid red 5px; */
+}
+.layer .contentBody{
+  width:25%;
+  position:absolute;
+  top:50%;
+  text-align: center;
+  transform:translateY(-50%);
+}
+.layer img{
+  position:absolute;
+  width:35%;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+  
+}
+.bottom{
+  background-color:black;
+  z-index:1;
+}
+.bottom .contentBody{
+  right:5%;
+
+}
+.top .contentBody{
+  left:5%;
+}
+.top{
+  background:green;
+  z-index:2;
+  width:50vw
+}
+.top .content{
+  left:50%;
+}
+.handle{
+  position: absolute;
+  height:100%;
+  display: block;
+  background-color:palegoldenrod;
+  width:5px;
+  top:0;
+  left:50%;
+  z-index: 3;
+}
+.skewed .handle{
+  top:50%;
+  transform:rotate(30deg) translateY(-50%);
+  height:200%;
+  transform-origin:top;
+}
+
+.skewed .top{
+  transform: skew(-30deg);
+  margin-left:-1000px;
+  width: calc(50vw + 1000px);
+}
+
+.skewed .top .contentWrap{
+  transform: skew(30deg);
+  margin-left:1000px;
+}
+
+@media(max-width:768px){
+  body{
+    font-size:75%;
+  }
+}
+
+.bottomHeader{
+  color:white;
+}
+.bottomText{
+  color:white;
+}
+.aboutHeader{
+  /* border:solid purple 2px; */
+  font-size:2vw;
+  overflow:hidden;
+}
+.aboutText{
+  overflow:hidden;
+  font-size:1vw;
+  /* border:solid pink 2px; */
+  /* width:50vw;
+  height:20vw; */
+}
+.centering{
+  display:flex;
+  justify-content:center;
+  /* width:70%; */
+  /* border:solid white 2px; */
+}
+.sectionbottom{
+  background-image:url("images/kisukeface.png");
+    min-height:50em;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
